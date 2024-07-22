@@ -145,3 +145,9 @@ ul.songs li {
   padding: 0.875rem 2rem;
   margin: 0.5rem;
 }
+function showMessage(element, msg, color) {
+  element.style.visibility = "visible";
+  element.textContent = msg;
+  element.style.color = color;
+  element.previousElementSibling.style.border = `2px solid ${color}`;
+}
